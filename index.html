@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kebijakan Privasi - Safety Report App</title>
+    <style>
+        :root {
+            --bg-primary: #0F172A;
+            --bg-card: #1E293B;
+            --text-primary: #F8FAFC;
+            --text-secondary: #94A3B8;
+            --accent: #F97316;
+            --k3-green: #009B4C;
+            --border: #334155;
+        }
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.6;
+            padding: 24px 16px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            padding: 32px 24px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+        }
+        .header {
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 20px;
+            margin-bottom: 24px;
+        }
+        .badge {
+            display: inline-block;
+            background-color: rgba(249, 115, 22, 0.15);
+            color: var(--accent);
+            border: 1px solid rgba(249, 115, 22, 0.4);
+            font-size: 12px;
+            font-weight: bold;
+            padding: 4px 10px;
+            border-radius: 6px;
+            margin-bottom: 12px;
+            letter-spacing: 0.5px;
+        }
+        h1 {
+            font-size: 26px;
+            color: #FFFFFF;
+            margin-bottom: 8px;
+        }
+        .last-updated {
+            font-size: 13px;
+            color: var(--text-secondary);
+        }
+        h2 {
+            font-size: 18px;
+            color: #FFFFFF;
+            margin-top: 24px;
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        p {
+            color: var(--text-secondary);
+            margin-bottom: 12px;
+            font-size: 15px;
+        }
+        ul {
+            margin-left: 20px;
+            margin-bottom: 16px;
+            color: var(--text-secondary);
+            font-size: 15px;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        li strong {
+            color: #FFFFFF;
+        }
+        .callout {
+            background-color: rgba(0, 155, 76, 0.1);
+            border-left: 4px solid var(--k3-green);
+            padding: 14px 18px;
+            border-radius: 6px;
+            margin: 20px 0;
+        }
+        .callout p {
+            color: #E2E8F0;
+            margin-bottom: 0;
+        }
+        .footer {
+            margin-top: 36px;
+            border-top: 1px solid var(--border);
+            padding-top: 18px;
+            font-size: 13px;
+            text-align: center;
+            color: var(--text-secondary);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <span class="badge">DOKUMEN HUKUM RESMI</span>
+            <h1>Kebijakan Privasi (Privacy Policy)</h1>
+            <p class="last-updated">Terakhir diperbarui: 27 Oktober 2026</p>
+        </div>
+
+        <p>
+            Selamat datang di <strong>Safety Report App</strong> ("Aplikasi"). Kami sangat menghargai privasi Anda dan berkomitmen untuk melindungi integritas serta keamanan data pribadi Anda sesuai dengan standar Google Play Developer Policy.
+        </p>
+
+        <div class="callout">
+            <p><strong>Prinsip Utama:</strong> Safety Report App dirancang dengan arsitektur <em>Offline-First</em>. Seluruh catatan laporan temuan, foto dokumentasi, dan data identitas Anda disimpan secara aman di perangkat lokal Anda.</p>
+        </div>
+
+        <h2>1. Izin Perangkat & Data yang Dikumpulkan</h2>
+        <p>Untuk mendukung fungsi pelaporan keselamatan kerja K3 & HSE, aplikasi meminta izin berikut:</p>
+        <ul>
+            <li><strong>Kamera (android.permission.CAMERA):</strong> Digunakan untuk mengambil foto bukti kondisi bahaya lapangan (Foto Before) dan dokumentasi hasil perbaikan (Foto After) secara langsung melalui ponsel.</li>
+            <li><strong>Lokasi GPS Presisi & Perkiraan (ACCESS_FINE_LOCATION & ACCESS_COARSE_LOCATION):</strong> Digunakan untuk menyematkan koordinat garis lintang dan bujur (geotagging) serta cap stempel resmi pada dokumen temuan K3 secara akurat di lokasi kerja.</li>
+            <li><strong>Penyimpanan Galeri & Media (READ_MEDIA_IMAGES / File Picker):</strong> Digunakan ketika Anda memilih untuk mengunggah foto dokumentasi yang sudah ada dari galeri penyimpanan perangkat Anda.</li>
+            <li><strong>Profil Pengguna (Nama, NIP, Departemen):</strong> Digunakan untuk mengisi otomatis identitas petugas inspektor dan lembar pengesahan tanda tangan pada formulir laporan K3.</li>
+        </ul>
+
+        <h2>2. Penggunaan & Pengolahan Data</h2>
+        <p>Data yang Anda masukkan hanya digunakan untuk tujuan fungsional aplikasi:</p>
+        <ul>
+            <li>Membuat berkas laporan inspeksi keselamatan kerja K3 standar HSE.</li>
+            <li>Menyematkan stempel visual waktu nyata (watermark), koordinat GPS, dan identitas pelapor pada foto bukti.</li>
+            <li>Mengekspor berkas spreadsheet Excel (.xlsx) dan dokumen cetak resmi PDF untuk kebutuhan kepatuhan K3 internal perusahaan Anda.</li>
+        </ul>
+
+        <h2>3. Layanan Pihak Ketiga & Iklan (Google AdMob)</h2>
+        <p>
+            Aplikasi ini menggunakan layanan periklanan resmi <strong>Google AdMob</strong> untuk menampilkan iklan (seperti iklan layar penuh / interstitial). Google AdMob dapat memproses pengenal iklan anonim perangkat Anda (Google Advertising ID) sesuai dengan kebijakan resmi Google:
+        </p>
+        <ul>
+            <li><a href="https://policies.google.com/privacy" target="_blank" rel="noopener" style="color: var(--accent);">Kebijakan Privasi Google</a></li>
+            <li><a href="https://support.google.com/admob/answer/6128543" target="_blank" rel="noopener" style="color: var(--accent);">Kebijakan & Kepatuhan Google AdMob</a></li>
+        </ul>
+        <p>
+            <strong>Catatan K3:</strong> Kami <strong>TIDAK PERNAH</strong> membagikan atau menyalurkan foto temuan bahaya, dokumen inspeksi, koordinat GPS lapangan, maupun data profil petugas Anda kepada jaringan iklan atau pihak ketiga manapun.
+        </p>
+
+        <h2>4. Keamanan & Retensi Penyimpanan</h2>
+        <p>
+            Semua data tersimpan secara lokal di media penyimpanan aman perangkat Anda (Internal Storage / Local Database). Anda memiliki kontrol penuh untuk mengedit, memperbarui, atau menghapus seluruh catatan laporan temuan kapan saja melalui menu di dalam aplikasi.
+        </p>
+
+        <h2>5. Batasan Usia Pengguna</h2>
+        <p>
+            Aplikasi ini ditujukan untuk tenaga kerja profesional, petugas inspektur K3/HSE, staf operasional, dan manajemen lapangan berusia 18 tahun ke atas. Aplikasi tidak ditujukan untuk anak-anak di bawah usia 13 tahun.
+        </p>
+
+        <h2>6. Kontak Pengembang</h2>
+        <p>
+            Jika Anda memiliki pertanyaan, saran, atau kendala mengenai Kebijakan Privasi ini, Anda dapat menghubungi kami melalui:
+        </p>
+        <ul>
+            <li><strong>Pengembang:</strong> Tim Pengembang Safety Report App</li>
+            <li><strong>Email:</strong> support@safetyreport.app (atau email kontak Google Play Developer Anda)</li>
+        </ul>
+
+        <div class="footer">
+            &copy; 2026 Safety Report App. All rights reserved.
+        </div>
+    </div>
+</body>
+</html>
